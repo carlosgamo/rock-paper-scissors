@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply
+  bg-gradient-to-t from-[hsl(239,47%,19%)] to-[hsl(214,46%,25%)] 
+}
+
+.header{
+  @apply
+  w-11/12 h-[6.5rem] m-auto mt-4 mb-6 p-3 
+  flex items-center place-content-center 
+  border-4 rounded-md border-[hsl(221,25%,76%)] border-opacity-60
+}
+
+.header-score-container{
+  @apply
+  rounded-md pt-2 pl-5 pr-5 w-auto h-[4.5rem] ml-28 mr-4 text-center bg-white
+}
+
+.header-score{
+  @apply
+  font-bold text-4xl text-[hsl(229,25%,31%)]
+}
+
+.rps-btn{
+  @apply
+  w-32 h-32
+  border-[1rem] rounded-full 
+  flex justify-center items-center
+  bg-white hover:bg-gray-300 
+}
+
+.btn-winner-bg{
+  @apply
+  rounded-full ring-gray-400 ring-8
+  /* bg-gradient-radial from-[hsl(0,0%,100%)] to-[hsl(237,49%,15%)] */
+}
+
+.rps-btn-rock{
+  @apply
+  border-red-500
+}
+
+.rps-btn-scissors{
+  @apply
+  border-yellow-500
+}  
+
+.rps-btn-paper{
+  @apply
+  border-indigo-500
+}
+
+.step2-option-btn{
+  @apply
+  flex justify-center place-items-center w-36 h-36
+}
+
+.result{
+  @apply
+  font-bold text-white text-4xl mt-4
+}
+  
+.play-again-btn{
+  @apply
+  text-[hsl(229,25%,31%)] font-bold text-lg
+  bg-white rounded-lg w-52 h-12
+  flex justify-center items-center
+}
