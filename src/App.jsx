@@ -17,7 +17,7 @@ function App() {
             <p>SCISSORS</p>
           </div>
           <div className='header-score-container'>
-            <p className='font-bold text-xs text-[hsl(229,64%,46%)]'>SCORE</p>
+            <p className=''>SCORE</p>
             <p className='header-score'>{score}</p>
           </div>
         </div>

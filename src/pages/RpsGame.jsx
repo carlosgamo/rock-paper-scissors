@@ -59,7 +59,7 @@ const RpsGame = ({ score, setScore }) => {
                                     setScore={setScore}
                                     step={step} setStep={setStep}/> : ""}
 
-            <div className="absolute top-96 right-24">
+            <div className="absolute bottom-20 right-24">
                 <button className="w-36 h-10 border-2 rounded-lg text-white 
                                 font-semibold hover:bg-white hover:text-[hsl(239,47%,19%)] 
                                 pl-10 pr-10 "

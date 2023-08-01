@@ -8,10 +8,10 @@ const Step1rps = ({playGame}) => {
 
     return(
         <>
-            <div className="ml-4 scale-75">
+            <div className="mt-4 scale-75 lg:scale-125 lg:mt-24">
                 <BgTriangle/>
             </div>
-            <div className="m-auto grid grid-cols-2 grid-rows-3 gap-6 justify-center place-items-center absolute ml-8">
+            <div className="m-auto grid grid-cols-2 grid-rows-3 gap-20 justify-center place-items-center absolute">
                 <div>
                     <button onClick={() => {playGame("PAPER")}}>
                         <IconPaper/>

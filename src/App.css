@@ -9,14 +9,14 @@ body{
 
 .header{
   @apply
-  w-11/12 h-[6.5rem] m-auto mt-4 mb-6 p-3 
+  w-11/12 lg:w-4/12 h-[6.5rem] m-auto mt-4 mb-6 
   flex items-center place-content-center 
   border-4 rounded-md border-[hsl(221,25%,76%)] border-opacity-60
 }
 
 .header-score-container{
   @apply
-  rounded-md pt-2 pl-5 pr-5 w-auto h-[4.5rem] ml-28 mr-4 text-center bg-white
+  rounded-md pl-5 pr-5 pt-2 w-auto h-[4rem] ml-28 mr-4  text-center text-[hsl(229,64%,46%)] text-[0.75rem]/3 bg-white
 }
 
 .header-score{
@@ -26,7 +26,7 @@ body{
 
 .rps-btn{
   @apply
-  w-32 h-32
+  w-32 h-32 lg:w-52 lg:h-52
   border-[1rem] rounded-full 
   flex justify-center items-center
   bg-white hover:bg-gray-300 
@@ -51,11 +51,6 @@ body{
 .rps-btn-paper{
   @apply
   border-indigo-500
-}
-
-.step2-option-btn{
-  @apply
-  flex justify-center place-items-center w-36 h-36
 }
 
 .result{

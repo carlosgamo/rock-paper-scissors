@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.picked-label{
+    @apply
+    lg:-mt-72
+    text-white font-bold flex justify-center 
+}
+
+.step2-option-btn{
+    @apply
+    w-36 h-36 lg:w-52 lg:h-52
+    flex justify-center place-items-center 
+    lg:bg-gray-200 lg:rounded-full
+}
+
+.step2-container{
+    @apply
+    lg:mt-20
+    m-auto grid grid-cols-2 grid-rows-6 gap-4 text-sm 
+}

@@ -2,7 +2,7 @@ import IconPaper from "../icons/IconPaper"
 import IconRock from "../icons/IconRock"
 import IconScissors from "../icons/IconScissors"
 import { useEffect } from "react"
-import '../App.css'
+import './RpsGame.css'
 
 const Step2rps = ({playerPick, IApick, result, score, setScore, step, setStep}) => { 
 
@@ -15,35 +15,33 @@ const Step2rps = ({playerPick, IApick, result, score, setScore, step, setStep}) 
 
 
     return(
-        <div className="m-auto grid grid-cols-2 grid-rows-8 gap-4  text-sm">
-            {/* <div className={result === 1 ? "btn-winner-bg step2-option-btn" : "step2-option-btn"}> */}
-            <div className="step2-option-btn">
+        <div className="step2-container">
+            <div className="step2-option-btn lg:justify-start">
                     {playerPick === "ROCK" ? <IconRock/> : null}
                     {playerPick === "PAPER" ? <IconPaper /> : null}
                     {playerPick === "SCISSORS" ? <IconScissors/> : null}
             </div>
-            {/* <div className={result === 2 ? "btn-winner-bg step2-option-btn" : "step2-option-btn"}> */}
-            <div className="step2-option-btn">
+            <div className="step2-option-btn lg:justify-end lg:ml-40">
                 {IApick === "ROCK" ? <IconRock/> : null}
                 {IApick === "PAPER" ? <IconPaper /> : null}
                 {IApick === "SCISSORS" ? <IconScissors/> : null}
             </div>
-            <div className="text-white font-bold flex justify-center">
+            <div className="picked-label lg:justify-center lg:mr-36">
                 YOU PICKED
             </div>
-            <div className="text-white font-bold flex justify-center">
+            <div className="picked-label lg:justify-end lg:mr-10">
                 THE HOUSE PICKED
             </div>
             {IApick ? 
-                <div className="col-span-2 flex justify-center mt-10">
+                <div className="col-span-2 flex justify-center mt-10 lg:-mt-[25rem]">
                     <div className="result">
                         {result === 1 ? <div>YOU WIN</div> : 
-                        result === 2 ? <div>YOU LOSE</div> : 
+                        result === 2 ? <div>YOU LOSE</div> :
                         result === 3 ? <div>TIE</div> : ""}
                     </div>
                 </div> 
-                : ""}
-                <div className="col-span-2 flex justify-center">
+                : <div className="col-span-2 flex justify-center mt-10 lg:-mt-[25rem]"> </div>}
+                <div className="col-span-2 flex justify-center lg:-mt-[35rem]">
                     <button className="play-again-btn" onClick={() => {setStep(step-1)}}>
                         PLAY AGAIN
                     </button>            
